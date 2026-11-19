@@ -25,6 +25,8 @@
 
 > **Can't switch it on?** Android 13+ restricts apps installed outside the Play Store. Go to *Settings → Apps → Scroll Duck*, tap **⋮** → **Allow restricted settings**, then try again.
 
+> **"App not installed"?** An older Scroll Duck from somewhere else is already on the phone. Uninstall it first, then open the APK again.
+
 Requires Android 11 or newer (the 3D duck needs Android 13+).
 
 ## Updates
