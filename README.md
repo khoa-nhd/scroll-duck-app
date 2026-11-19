@@ -2,39 +2,39 @@
 
 <h1 align="center">Scroll Duck 🦆</h1>
 
-<p align="center">Chú vịt nhỏ sống trên điện thoại, nhẹ nhàng kéo bạn ra khỏi vòng lướt Reels &amp; Shorts không hồi kết.</p>
+<p align="center">A tiny duck that lives on your phone and gently pulls you out of endless Reels &amp; Shorts.</p>
 
 <p align="center">
-  <a href="https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk"><b>⬇️ Tải APK bản mới nhất</b></a>
+  <a href="https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk"><b>⬇️ Download the latest APK</b></a>
   &nbsp;·&nbsp;
-  <a href="https://khoa-nhd.github.io/scroll-duck-app/">Trang tải &amp; hướng dẫn</a>
+  <a href="https://khoa-nhd.github.io/scroll-duck-app/">Download page &amp; guide</a>
 </p>
 
-## Vịt làm được gì?
+## What does the duck do?
 
-- ⏱️ **Giới hạn mỗi ngày**: lướt trong hạn mức thì vịt để yên; quá giờ, vịt lạch bạch đi ra màn hình.
-- ⏸️ **Dừng video giùm bạn**: Instagram, Facebook Reels, YouTube Shorts.
-- 💬 **Trò chuyện chữa lành**: vịt hỏi han, lắng nghe và nhớ chuyện của bạn (AI).
-- 🌙 **Giờ học, giờ ngủ**: đúng giờ học thì nhắc học, khuya thì dỗ đi ngủ.
+- ⏱️ **A daily budget**: scroll within your limit and the duck leaves you be; go over, and out it waddles onto your screen.
+- ⏸️ **Pauses the video for you**: Instagram, Facebook Reels, YouTube Shorts.
+- 💬 **A caring chat**: the duck checks in, listens, and remembers what you share (AI).
+- 🌙 **Study and sleep time**: nudges you back to studying, and off to bed when it's late.
 
-## Cài đặt
+## Install
 
-1. Tải [`scroll-duck.apk`](https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk) và mở file.
-2. Nếu máy hỏi, cho phép **cài ứng dụng không rõ nguồn**. Play Protect cảnh báo thì chọn *Thêm chi tiết → Vẫn cài đặt*.
-3. Mở app, bấm **turn me on**, bật *Scroll Duck* trong **Trợ năng (Accessibility)**.
+1. Download [`scroll-duck.apk`](https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk) and open it.
+2. If asked, allow **installing unknown apps**. If Play Protect warns you, choose *More details → Install anyway*.
+3. Open the app, tap **turn me on**, and switch *Scroll Duck* on under **Accessibility**.
 
-> **Không bật được Trợ năng?** Android 13+ chặn app cài ngoài Play Store. Vào *Cài đặt → Ứng dụng → Scroll Duck*, bấm **⋮** → **Cho phép cài đặt hạn chế**, rồi bật lại.
+> **Can't switch it on?** Android 13+ restricts apps installed outside the Play Store. Go to *Settings → Apps → Scroll Duck*, tap **⋮** → **Allow restricted settings**, then try again.
 
-Yêu cầu: Android 11 trở lên (vịt 3D cần Android 13+).
+Requires Android 11 or newer (the 3D duck needs Android 13+).
 
-## Cập nhật
+## Updates
 
-App tự kiểm tra bản mới khi mở. Có bản mới sẽ hiện thẻ **“a new me is here! 🎁”**, bấm **update me** là xong, dữ liệu vẫn giữ nguyên.
+The app checks for a new version when you open it. When one is out you'll see **"a new me is here! 🎁"**; tap **update me** and you're done. Your settings and memories stay.
 
-## Quyền riêng tư
+## Privacy
 
-Vịt chỉ xem ID màn hình để biết bạn đang ở Reels/Shorts, không đọc chữ hay nội dung trên màn hình. Chỉ những gì bạn gõ hoặc nói trong khung chat mới được gửi tới AI để trả lời.
+The duck only looks at screen IDs to tell when you're on Reels or Shorts, never at the text or content on your screen. Only what you type or say in the chat is sent to the AI so it can reply.
 
 ---
 
-Repo này chỉ chứa bản cài đặt (mã nguồn không công khai). Báo lỗi hoặc góp ý: mở một [Issue](https://github.com/khoa-nhd/scroll-duck-app/issues).
+This repo only hosts the app downloads (the source code is not public). Found a bug or have an idea? Open an [issue](https://github.com/khoa-nhd/scroll-duck-app/issues).
