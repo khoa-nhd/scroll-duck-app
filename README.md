@@ -20,8 +20,14 @@
 ## Install
 
 1. Download [`scroll-duck.apk`](https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk) and open it.
-2. If asked, allow **installing unknown apps**. If Play Protect warns you, choose *More details → Install anyway*.
+2. If asked, allow **installing unknown apps**. If Play Protect warns you, choose *More details → Install anyway*. If it says **"App blocked to protect your device"**, see below.
 3. Open the app, tap **turn me on**, and switch *Scroll Duck* on under **Accessibility**.
+
+> **"App blocked to protect your device"?** Google Play Protect blocks every app that uses Accessibility when it isn't installed from the Play Store (the duck only uses it to notice Reels and Shorts). To install:
+> 1. Open the **Play Store**, tap your **profile picture** → **Play Protect**.
+> 2. Tap **⚙️** and turn off **Scan apps with Play Protect**.
+> 3. Open `scroll-duck.apk` again and install it.
+> 4. Go back and **turn Play Protect on again**. The duck keeps working.
 
 > **Can't switch it on?** Android 13+ restricts apps installed outside the Play Store. Go to *Settings → Apps → Scroll Duck*, tap **⋮** → **Allow restricted settings**, then try again.
 

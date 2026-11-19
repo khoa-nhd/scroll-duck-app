@@ -67,6 +67,9 @@
   ol.steps span { font-size: 15px; color: var(--ink); opacity: .82; }
   .note { background: var(--peach); border-radius: 20px; padding: 14px 18px; font-size: 14.5px; margin-top: 16px; }
   .note b { font-weight: 800; }
+  .note.protect { background: var(--sky); }
+  .note ol { margin: 8px 0 0; padding-left: 22px; display: grid; gap: 4px; }
+  .note code { background: rgba(255,255,255,.7); padding: 1px 6px; border-radius: 6px; font-size: 13.5px; }
   details { background: var(--card); border-radius: 20px; padding: 14px 18px; box-shadow: var(--shadow); margin-top: 10px; }
   summary { cursor: pointer; font-weight: 700; }
   details p { margin: 8px 0 2px; font-size: 15px; opacity: .85; }
@@ -102,9 +105,18 @@
     <div class="card">
       <ol class="steps">
         <li><div><b>Download the APK</b><span>Tap “Download for Android” above and open the file.</span></div></li>
-        <li><div><b>Allow the install</b><span>If asked, let your browser or Files app “install unknown apps”. If Play Protect warns you, choose <i>More details → Install anyway</i>.</span></div></li>
+        <li><div><b>Allow the install</b><span>If asked, let your browser or Files app “install unknown apps”. If Play Protect warns you, choose <i>More details → Install anyway</i>. If it says <b>“App blocked to protect your device”</b>, see the box below.</span></div></li>
         <li><div><b>Turn the duck on in Accessibility</b><span>Open the app, tap “turn me on”, pick <i>Scroll Duck</i> under Accessibility and switch it on.</span></div></li>
       </ol>
+      <div class="note protect">
+        <b>“App blocked to protect your device”?</b> Google Play Protect blocks every app that uses Accessibility when it isn’t installed from the Play Store. The duck only uses it to notice Reels and Shorts. To install:
+        <ol>
+          <li>Open the <b>Play Store</b>, tap your <b>profile picture</b> (top right) → <b>Play Protect</b>.</li>
+          <li>Tap <b>⚙️</b> (top right) and turn off <b>Scan apps with Play Protect</b>.</li>
+          <li>Open <code>scroll-duck.apk</code> again and install it.</li>
+          <li>Go back and <b>turn Play Protect on again</b>. The duck keeps working.</li>
+        </ol>
+      </div>
       <div class="note">
         <b>Can’t switch it on?</b> Android 13+ restricts apps installed outside the Play Store. Go to <i>Settings → Apps → Scroll Duck</i>, tap <b>⋮</b> in the top corner → <b>Allow restricted settings</b>, then try again.
       </div>
