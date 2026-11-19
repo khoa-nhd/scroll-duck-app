@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scroll Duck</title>
+<meta name="description" content="Chú vịt nhỏ giúp bạn bớt lướt Reels/Shorts. Tải APK cho Android.">
+<meta property="og:title" content="Scroll Duck 🦆">
+<meta property="og:description" content="Chú vịt nhỏ giúp bạn bớt lướt Reels/Shorts. Tải miễn phí cho Android.">
+<meta property="og:image" content="icon.png">
+<meta name="theme-color" content="#FFF8EE">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg-top: #FFF8EE; --bg-bottom: #FCEFE4;
+    --ink: #5A4535; --ink-soft: #9C8676;
+    --card: #FFFFFF; --orange: #FF9A3C; --orange-deep: #F07A1E;
+    --butter: #FBE3A0; --peach: #FFE1D2; --mint: #DDF2E8; --lilac: #EAE3FA; --sky: #DCEEFB;
+    --shadow: 0 12px 30px rgba(176, 122, 74, .18);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Nunito", system-ui, sans-serif; color: var(--ink);
+    background: linear-gradient(var(--bg-top), var(--bg-bottom)) fixed; background-color: var(--bg-top);
+    line-height: 1.55; -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 56px; }
+  .hero { text-align: center; }
+  .icon {
+    width: 132px; height: 132px; border-radius: 34px; box-shadow: var(--shadow);
+    animation: bob 3.2s ease-in-out infinite;
+  }
+  @keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(2deg); } }
+  @media (prefers-reduced-motion: reduce) { .icon { animation: none; } }
+  h1 { font-size: clamp(36px, 9vw, 48px); font-weight: 900; letter-spacing: -.02em; margin: 18px 0 4px; }
+  .tagline { font-size: 18px; color: var(--ink-soft); font-weight: 600; margin: 0 auto 26px; max-width: 30em; }
+  .download {
+    display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+    background: linear-gradient(var(--orange), var(--orange-deep)); color: #fff;
+    font-weight: 800; font-size: 19px; padding: 16px 30px; border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(240, 122, 30, .35); transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .download:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(240, 122, 30, .42); }
+  .download:active { transform: scale(.97); }
+  .meta { margin-top: 12px; font-size: 14px; color: var(--ink-soft); font-weight: 600; }
+  .meta a { color: var(--orange-deep); }
+  section { margin-top: 44px; }
+  h2 { font-size: 22px; font-weight: 800; margin: 0 0 14px; }
+  .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .feature { border-radius: 24px; padding: 18px; }
+  .feature b { display: block; font-size: 16px; margin-top: 6px; }
+  .feature span { font-size: 14px; opacity: .8; }
+  .feature .emoji { font-size: 26px; }
+  .card { background: var(--card); border-radius: 28px; padding: 22px; box-shadow: var(--shadow); }
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 16px; }
+  ol.steps li { counter-increment: s; display: grid; grid-template-columns: 34px 1fr; gap: 12px; }
+  ol.steps li::before {
+    content: counter(s); width: 34px; height: 34px; border-radius: 50%; background: var(--butter);
+    display: grid; place-items: center; font-weight: 800;
+  }
+  ol.steps b { display: block; }
+  ol.steps span { font-size: 15px; color: var(--ink); opacity: .82; }
+  .note { background: var(--peach); border-radius: 20px; padding: 14px 18px; font-size: 14.5px; margin-top: 16px; }
+  .note b { font-weight: 800; }
+  details { background: var(--card); border-radius: 20px; padding: 14px 18px; box-shadow: var(--shadow); margin-top: 10px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { margin: 8px 0 2px; font-size: 15px; opacity: .85; }
+  footer { margin-top: 48px; text-align: center; font-size: 13px; color: var(--ink-soft); }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 420px) { .features { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img class="icon" src="icon.png" alt="Scroll Duck" width="132" height="132">
+    <h1>Scroll Duck</h1>
+    <p class="tagline">Chú vịt nhỏ sống trên điện thoại, nhẹ nhàng kéo bạn ra khỏi vòng lướt Reels &amp; Shorts không hồi kết.</p>
+    <a class="download" id="download" href="https://github.com/khoa-nhd/scroll-duck-app/releases/latest/download/scroll-duck.apk">
+      <span aria-hidden="true">⬇️</span> Tải cho Android
+    </a>
+    <div class="meta" id="meta">Android 11 trở lên · miễn phí</div>
+  </div>
+
+  <section>
+    <h2>Vịt làm được gì?</h2>
+    <div class="features">
+      <div class="feature" style="background: var(--butter)"><div class="emoji">⏱️</div><b>Giới hạn mỗi ngày</b><span>Lướt trong hạn mức thì vịt để yên. Quá giờ, vịt lạch bạch đi ra.</span></div>
+      <div class="feature" style="background: var(--mint)"><div class="emoji">⏸️</div><b>Dừng video giùm bạn</b><span>Instagram, Facebook Reels, YouTube Shorts.</span></div>
+      <div class="feature" style="background: var(--lilac)"><div class="emoji">💬</div><b>Trò chuyện chữa lành</b><span>Vịt hỏi han, lắng nghe và nhớ chuyện của bạn (AI).</span></div>
+      <div class="feature" style="background: var(--sky)"><div class="emoji">🌙</div><b>Giờ học, giờ ngủ</b><span>Đúng giờ học thì nhắc học, khuya thì dỗ đi ngủ.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cài đặt</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><div><b>Tải file APK</b><span>Bấm nút “Tải cho Android” ở trên, mở file vừa tải.</span></div></li>
+        <li><div><b>Cho phép cài app</b><span>Nếu máy hỏi, cho trình duyệt / Files quyền “Cài ứng dụng không rõ nguồn”. Play Protect có cảnh báo thì chọn <i>Thêm chi tiết → Vẫn cài đặt</i>.</span></div></li>
+        <li><div><b>Bật vịt trong Trợ năng</b><span>Mở app, bấm “turn me on”, chọn <i>Scroll Duck</i> trong Trợ năng (Accessibility) và bật lên.</span></div></li>
+      </ol>
+      <div class="note">
+        <b>Không bật được Trợ năng?</b> Android 13+ chặn app cài ngoài Play Store. Vào <i>Cài đặt → Ứng dụng → Scroll Duck</i>, bấm <b>⋮</b> ở góc trên → <b>Cho phép cài đặt hạn chế</b>, rồi bật lại.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Câu hỏi thường gặp</h2>
+    <details>
+      <summary>Cập nhật bản mới thế nào?</summary>
+      <p>App tự kiểm tra khi mở. Có bản mới sẽ hiện thẻ “a new me is here! 🎁”, bấm <b>update me</b> là xong, dữ liệu vẫn giữ nguyên. Hoặc tải lại từ trang này và cài đè.</p>
+    </details>
+    <details>
+      <summary>Vịt có đọc màn hình của tôi không?</summary>
+      <p>Không. Vịt chỉ xem ID màn hình để biết bạn đang ở Reels/Shorts, không đọc chữ hay nội dung. Chỉ những gì bạn gõ trong khung chat mới được gửi tới AI để trả lời.</p>
+    </details>
+    <details>
+      <summary>Tại sao cần quyền Trợ năng?</summary>
+      <p>Để biết app nào đang mở, hiện vịt đè lên video, và dừng video khi vịt xuất hiện.</p>
+    </details>
+    <details>
+      <summary>Máy tôi không thấy vịt 3D?</summary>
+      <p>Vịt 3D cần Android 13 trở lên. Android 11–12 vẫn dùng được các tính năng khác.</p>
+    </details>
+  </section>
+
+  <footer>
+    Làm với 💛 bởi khoa-nhd · <a href="https://github.com/khoa-nhd/scroll-duck-app/releases">Tất cả phiên bản</a>
+  </footer>
+</main>
+<script>
+  // Show the latest version and size under the button (the button itself always works without this).
+  fetch("https://api.github.com/repos/khoa-nhd/scroll-duck-app/releases/latest")
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (rel) {
+      if (!rel) return;
+      var apk = (rel.assets || []).filter(function (a) { return /\.apk$/.test(a.name); })[0];
+      if (!apk) return;
+      var mb = (apk.size / 1048576).toFixed(1);
+      var date = new Date(rel.published_at).toLocaleDateString("vi-VN");
+      document.getElementById("meta").textContent =
+        "Phiên bản " + rel.tag_name.replace(/^v/, "") + " · " + mb + " MB · " + date + " · Android 11+";
+    })
+    .catch(function () {});
+</script>
+</body>
+</html>
